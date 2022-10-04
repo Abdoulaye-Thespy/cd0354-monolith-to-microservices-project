@@ -17,6 +17,10 @@ spec:
       containers:
       - name: backend-feed
         image: abdoulayethespy/udagram-api-feed
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
         ports:
         - containerPort: 8080
         envFrom:
